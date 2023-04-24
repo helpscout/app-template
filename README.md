@@ -2,15 +2,10 @@
 
 This is a basic starter template for building a Help Scout Sidebar App. It uses [Vite](https://vitejs.dev) and React, and it comes with Help Scout's UI Kit and JavaScript SDK pre-installed.
 
-[![Edit in CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/helpscout/app-template/main)
 
 ## 🚀 Getting Started
 
-⚠️ TODO - Steps to clone the template and create a new integration in Help Scout should go here. This include:
-
-- Any setup necessary on Help Scout side (FFs to enable, create new custom app, etc)
-- Forking the repo or cloning the CodeSandbox project
-- Deploying to some server if not using CodeSandbox
+Check out the [Slab Post](https://helpscout.slab.com/posts/tutorial-creating-a-custom-app-2-0-90o3dbkg) for instructions on how to use this template to create your own app.
 
 ## 🛠️ Resources
 
