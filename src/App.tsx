@@ -1,4 +1,4 @@
-import HelpScout from "@helpscout/javascript-sdk";
+import HelpScout, { NOTIFICATION_TYPES } from "@helpscout/javascript-sdk";
 import { Button, DefaultStyle, Heading } from "@helpscout/ui-kit";
 import { useEffect, useState } from "react";
 
@@ -14,7 +14,10 @@ function App() {
   }, []);
 
   function onClick() {
-    HelpScout.showNoty("success", "Hello from the sidebar app");
+    HelpScout.showNotification(
+      NOTIFICATION_TYPES.SUCCESS,
+      "Hello from the sidebar app"
+    );
   }
 
   return (
