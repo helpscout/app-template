@@ -14,7 +14,7 @@ function App() {
   }, []);
 
   function onClick() {
-    HelpScout.showNoty("success", "Hello from the sidebar app");
+    HelpScout.showNotification("SUCCESS", "Hello from the sidebar app");
   }
 
   return (
