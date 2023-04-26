@@ -24,4 +24,4 @@ This is a basic starter template for building a Help Scout Sidebar App. It uses 
 ## 🛠️ Resources
 
 - [UI Kit Storybook](https://ui-kit-bqr.pages.dev/)
-- [JavaScript SDK Documentation]() (TBD)
+- [JavaScript SDK Documentation](https://paper.dropbox.com/doc/Developer-Platform-API-Methods--B3IOyiE8hnLX3P9gvmwcroNQAg-uEz4uEB6x7aWsur5NdPui)
