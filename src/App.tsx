@@ -1,33 +1,12 @@
-import HelpScout, { NOTIFICATION_TYPES } from "@helpscout/javascript-sdk";
-import { Button, DefaultStyle, Heading } from "@helpscout/ui-kit";
-import { useEffect, useState } from "react";
+import { DefaultStyle, Heading, useHelpScoutContext } from "@helpscout/ui-kit";
 
 function App() {
-  const [userEmail, setUserEmail] = useState<string | undefined>(
-    "unknown user"
-  );
-
-  useEffect(() => {
-    HelpScout.getApplicationContext().then(({ user }) =>
-      setUserEmail(user?.email)
-    );
-  }, []);
-
-  function onClick() {
-    HelpScout.showNotification(
-      NOTIFICATION_TYPES.SUCCESS,
-      "Hello from the sidebar app"
-    );
-  }
+  const { user } = useHelpScoutContext();
 
   return (
     <div className="App">
       <DefaultStyle />
-      <Heading level="h4">Hi, {userEmail}</Heading>
-      <br />
-      <Button size="sm" onClick={onClick}>
-        Click me
-      </Button>
+      <Heading level="h4">Hi {user?.firstName || "there"} 👋</Heading>
     </div>
   );
 }
