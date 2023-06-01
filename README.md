@@ -11,15 +11,15 @@ This is a basic starter template for building a Help Scout Sidebar App. It uses 
 > The first time you open your repo in CodeSandbox it will take a couple of minutes to build a container and install dependencies. Once that's done, you'll see the code editor on the left and a preview panel of your app on the right.
 4. Hover on the preview panel and click on the Show navigator icon on the top right. This will reveal the URL of your environment. Copy this URL, you'll need it in a few minutes.
 
-5. On Help Scout, login as an Administrator or Account owner and navigate to **Manage** -> **Apps** -> **Build a custom app** (or click [here](https://secure.helpscout.net/apps/custom/))
-6. Click on **Create App**, fill out the form as described below, and click Save:
+5. On Help Scout, login as an Administrator or Account owner and navigate to **Manage** -> **Apps**
+6. Click the Create button at the top (or click [here](https://secure.helpscout.net/apps/create/))
+7. Click on **Create App**, fill out the form as described below, and click Save:
 - App Name: anything you want
-- Content Type: Dynamic App
 - Callback URL: the URL of your environment you copied previously
-- New Apps Platform: Toggle on
+- Secret Key: any text value
 - Mailboxes: select the mailboxes where you want this app to be available in
-7. Go to one of the Mailboxes you selected in the previous step and open a conversation. You should see your app running in the right Sidebar.
-8. Now you can start making changes to your app in CodeSandbox and you should see those changes reflected immediately in Help Scout.
+8. Go to one of the Mailboxes you selected in the previous step and open a conversation. You should see your app running in the right Sidebar.
+9. Now you can start making changes to your app in CodeSandbox and you should see those changes reflected immediately in Help Scout.
 
 ## 🛠️ Resources
 
