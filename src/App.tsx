@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <DefaultStyle />
-      <Heading level="h4">Hi, {userEmail}</Heading>
+      <Heading level="h1">Hi, {userEmail}</Heading>
       <br />
       <Button size="sm" onClick={onClick}>
         Click me
