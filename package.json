@@ -7,7 +7,7 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview --host",
-    "watch": "tsc && (vite preview --host &) && vite build --watch"
+    "watch": "tsc && vite preview --host & && vite build --watch"
   },
   "dependencies": {
     "@helpscout/javascript-sdk": "^0.2.1",
