@@ -1,8 +1,15 @@
 import HelpScout, { NOTIFICATION_TYPES } from "@helpscout/javascript-sdk";
-import { Button, DefaultStyle, Heading } from "@helpscout/ui-kit";
+import {
+  Button,
+  DefaultStyle,
+  Heading,
+  useSetAppHeight,
+} from "@helpscout/ui-kit";
 import { useEffect, useState } from "react";
 
 function App() {
+  const appRef = useSetAppHeight();
+
   const [userEmail, setUserEmail] = useState<string | undefined>(
     "unknown user"
   );
@@ -21,7 +28,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" ref={appRef}>
       <DefaultStyle />
       <Heading level="h1">Hi, {userEmail}</Heading>
       <br />
