@@ -1,6 +1,6 @@
 {
   "startScript": "npm run watch",
   "container": {
-    "startScript": "npm run watch"
+    "startScript": "start"
   }
 }
