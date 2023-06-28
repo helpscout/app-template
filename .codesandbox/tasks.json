@@ -9,10 +9,14 @@
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
-    "watch": {
+    "preview": {
       "name": "watch",
-      "command": "npm run watch",
+      "command": "npm run preview",
       "runAtStart": true,
+      "restartOn": {
+        "files": ["*"], // File globs that trigger this task to restart
+        "branch": true // restart this task when creating a new branch/fork
+      },
       "preview": {
         "port": 4173
       }
