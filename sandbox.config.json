@@ -1,0 +1,6 @@
+{
+  "startScript": "watch",
+  "container": {
+    "startScript": "watch"
+  }
+}
