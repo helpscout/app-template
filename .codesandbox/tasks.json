@@ -1,0 +1,25 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "npm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "preview": {
+      "name": "preview",
+      "command": "npm run build && npm run preview",
+      "runAtStart": true,
+      "restartOn": {
+        "files": ["package.json", "src/*"], // File globs that trigger this task to restart
+        "branch": true // restart this task when creating a new branch/fork
+      },
+      "preview": {
+        "port": 4173
+      }
+    }
+  }
+}
