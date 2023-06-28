@@ -9,9 +9,9 @@
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
-    "preview": {
-      "name": "preview",
-      "command": "npm run preview",
+    "build": {
+      "name": "build",
+      "command": "npm run build",
       "runAtStart": true,
       "restartOn": {
         "files": ["package.json", "src/*"], // File globs that trigger this task to restart
