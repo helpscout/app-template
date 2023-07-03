@@ -10,7 +10,7 @@
     "watch": "tsc && (vite preview --host &) && vite build --watch"
   },
   "dependencies": {
-    "@helpscout/javascript-sdk": "^0.2.3",
+    "@helpscout/javascript-sdk": "^0.2.4",
     "@helpscout/ui-kit": "^0.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
