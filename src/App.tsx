@@ -4,6 +4,8 @@ import {
   DefaultStyle,
   Heading,
   useSetAppHeight,
+  Text,
+  useHelpScoutContext,
 } from "@helpscout/ui-kit";
 import { useEffect, useState } from "react";
 
@@ -14,11 +16,13 @@ function App() {
     "unknown user"
   );
 
+  const [status, setStatus] = useState<string | undefined>("unknown status");
+
+  const {user, conversation} = useHelpScoutContext()
   useEffect(() => {
-    HelpScout.getApplicationContext().then(({ user }) =>
-      setUserEmail(user?.email)
-    );
-  }, []);
+    setUserEmail(user?.email)
+    setStatus(conversation?.status)
+  }, [user, conversation]);
 
   function onClick() {
     HelpScout.showNotification(
@@ -31,6 +35,7 @@ function App() {
     <div className="App" ref={appRef}>
       <DefaultStyle />
       <Heading level="h1">Hi, {userEmail}</Heading>
+      <Text>The conversation is {status}</Text>
       <br />
       <Button size="sm" onClick={onClick}>
         Click me
