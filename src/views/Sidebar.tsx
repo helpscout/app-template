@@ -31,14 +31,26 @@ function Sidebar() {
     );
   }
 
+  function openSidePanel() {
+    const url = new URL(window.location.href);
+
+    if (url.origin) {
+      HelpScout.openSidePanel(`${url.origin}/side-panel`);
+    }
+  }
+
   return (
     <div ref={appRef}>
       <DefaultStyle />
       <Heading level="h1">Hi, {userEmail}</Heading>
       <Text>The conversation is {status}</Text>
-      <br />
-      <Button size="sm" onClick={onClick}>
+      <hr />
+      <Button size="sm" onClick={() => onClick()}>
         Click me
+      </Button>
+      <hr />
+      <Button size="sm" onClick={() => openSidePanel()} theme="red">
+        Open side panel
       </Button>
     </div>
   );
