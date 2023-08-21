@@ -1,9 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+import React from 'react'
 
-import "./index.css";
-import { HelpScoutContextProvider } from "@helpscout/ui-kit";
+import { HelpScoutContextProvider } from '@helpscout/ui-kit'
+
+import './index.css'
+
+import App from './App'
+import ReactDOM from 'react-dom/client'
+
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>

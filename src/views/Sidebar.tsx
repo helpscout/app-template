@@ -1,12 +1,14 @@
+import { useEffect, useState } from 'react';
+
 import HelpScout, { NOTIFICATION_TYPES } from '@helpscout/javascript-sdk';
 import {
   Button,
   Heading,
-  useSetAppHeight,
   Text,
   useHelpScoutContext,
+  useSetAppHeight,
 } from '@helpscout/ui-kit';
-import { useEffect, useState } from 'react';
+
 import { Divider } from '../components/';
 
 function Sidebar() {

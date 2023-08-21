@@ -1,6 +1,6 @@
-import { Heading, Button } from '@helpscout/ui-kit';
-
 import HelpScout, { NOTIFICATION_TYPES } from '@helpscout/javascript-sdk';
+import { Button, Heading } from '@helpscout/ui-kit';
+
 import { Divider } from '../components/';
 
 function SidePanel() {

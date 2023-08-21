@@ -1,13 +1,15 @@
-import { SidePanel, Sidebar } from './views';
 import {
-  BrowserRouter as Router,
+  Outlet,
   Route,
+  BrowserRouter as Router,
+  RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
-  Outlet,
-  RouterProvider,
 } from 'react-router-dom';
+
 import { DefaultStyle } from '@helpscout/ui-kit';
+
+import { SidePanel, Sidebar } from './views';
 
 function App() {
   const router = createBrowserRouter(
