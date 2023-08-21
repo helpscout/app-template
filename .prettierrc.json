@@ -1,0 +1,16 @@
+{
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "arrowParens": "avoid",
+  "tabWidth": 2,
+  "importOrder": [
+    "^@",
+    "^.*\\.utils|.*/utils|.*/api",
+    ".*/hooks|^.*\\.hooks|.*/reducer|.*/operations",
+    ".*/constants",
+    "\\.css",
+    ".*/components|.*/"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}
