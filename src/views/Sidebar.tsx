@@ -1,13 +1,13 @@
 import HelpScout, { NOTIFICATION_TYPES } from '@helpscout/javascript-sdk';
 import {
   Button,
-  DefaultStyle,
   Heading,
   useSetAppHeight,
   Text,
   useHelpScoutContext,
 } from '@helpscout/ui-kit';
 import { useEffect, useState } from 'react';
+import { Divider } from '../components/';
 
 function Sidebar() {
   const appRef = useSetAppHeight();
@@ -41,14 +41,13 @@ function Sidebar() {
 
   return (
     <div ref={appRef}>
-      <DefaultStyle />
       <Heading level="h1">Hi, {userEmail}</Heading>
       <Text>The conversation is {status}</Text>
-      <hr />
+      <Divider />
       <Button size="sm" onClick={() => onClick()}>
         Click me
       </Button>
-      <hr />
+      <Divider />
       <Button size="sm" onClick={() => openSidePanel()} theme="red">
         Open side panel
       </Button>

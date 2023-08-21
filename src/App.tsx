@@ -7,6 +7,7 @@ import {
   Outlet,
   RouterProvider,
 } from 'react-router-dom';
+import { DefaultStyle } from '@helpscout/ui-kit';
 
 function App() {
   const router = createBrowserRouter(
@@ -26,7 +27,12 @@ function App() {
 }
 
 const Root = () => {
-  return <Outlet />;
+  return (
+    <>
+      <DefaultStyle />
+      <Outlet />
+    </>
+  );
 };
 
 export default App;
