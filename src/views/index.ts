@@ -1,4 +1,4 @@
-import Sidebar from "./Sidebar";
-import SidePanel from "./SidePanel";
+import SidebarView from './SidebarView';
+import SidePanelView from './SidePanelView';
 
-export { SidePanel, Sidebar };
+export { SidePanelView, SidebarView };
