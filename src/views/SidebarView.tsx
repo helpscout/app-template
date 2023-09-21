@@ -9,9 +9,9 @@ import {
   useSetAppHeight,
 } from '@helpscout/ui-kit';
 
-import { Divider } from '../components/';
+import { Divider } from '../components';
 
-function Sidebar() {
+function SidebarView() {
   const appRef = useSetAppHeight();
 
   const [userEmail, setUserEmail] = useState<string | undefined>(
@@ -57,4 +57,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default SidebarView;
