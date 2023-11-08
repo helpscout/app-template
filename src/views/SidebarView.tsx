@@ -21,6 +21,7 @@ function SidebarView() {
   const [status, setStatus] = useState<string | undefined>('unknown status');
 
   const { user, conversation } = useHelpScoutContext();
+
   useEffect(() => {
     setUserEmail(user?.email);
     setStatus(conversation?.status);
