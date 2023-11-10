@@ -1,7 +1,27 @@
+import { useEffect, useState } from 'react';
+
 import HelpScout, { NOTIFICATION_TYPES } from '@helpscout/javascript-sdk';
-import { SidePanel, Text } from '@helpscout/ui-kit';
+import {
+  SidePanel,
+  Text,
+  useHelpScoutContext,
+  Heading,
+} from '@helpscout/ui-kit';
 
 function SidePanelView() {
+  const [userEmail, setUserEmail] = useState<string | undefined>(
+    'unknown user'
+  );
+
+  const [status, setStatus] = useState<string | undefined>('unknown status');
+
+  const { user, conversation } = useHelpScoutContext();
+
+  useEffect(() => {
+    setUserEmail(user?.email);
+    setStatus(conversation?.status);
+  }, [user, conversation]);
+
   function onClick() {
     HelpScout.showNotification(
       NOTIFICATION_TYPES.SUCCESS,
@@ -18,11 +38,14 @@ function SidePanelView() {
         icon="large-single-arrow-left"
       />
       <SidePanel.Content>
+        <Heading level="h1">Hi, {userEmail}</Heading>
+        <Text>The conversation is {status}</Text>
+        <hr />
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          tincidunt, mauris ut varius cursus, est dui fermentum risus, id
-          sollicitudin lacus dolor a metus. Praesent ut fermentum mi, at
-          pellentesque nisl.
+          This is some more text. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Quisque tincidunt, mauris ut varius cursus, est dui
+          fermentum risus, id sollicitudin lacus dolor a metus. Praesent ut
+          fermentum mi, at pellentesque nisl.
         </Text>
       </SidePanel.Content>
       <SidePanel.Footer
