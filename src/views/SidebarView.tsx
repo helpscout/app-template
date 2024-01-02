@@ -20,12 +20,17 @@ function SidebarView() {
 
   const [status, setStatus] = useState<string | undefined>('unknown status');
 
-  const { user, conversation } = useHelpScoutContext();
+  const [customerEmail, setCustomerEmail] = useState<string | undefined>(
+    'unknown customer'
+  );
+
+  const { user, conversation, customer } = useHelpScoutContext();
 
   useEffect(() => {
     setUserEmail(user?.email);
     setStatus(conversation?.status);
-  }, [user, conversation]);
+    setCustomerEmail(customer?.emails[0]?.value);
+  }, [user, conversation, customer]);
 
   function onClick() {
     HelpScout.showNotification(
@@ -46,6 +51,8 @@ function SidebarView() {
     <div ref={appRef}>
       <Heading level="h1">Hi, {userEmail}</Heading>
       <Text>The conversation is {status}</Text>
+      <Divider />
+      <Text>The customer is {customerEmail}</Text>
       <Divider />
       <Button size="sm" onClick={() => onClick()}>
         Click me
