@@ -10,8 +10,8 @@
     "watch": "tsc && (vite preview --host &) && vite build --watch"
   },
   "dependencies": {
-    "@helpscout/javascript-sdk": "^0.6.1",
-    "@helpscout/ui-kit": "^0.9.0",
+    "@helpscout/javascript-sdk": "^0.7.1",
+    "@helpscout/ui-kit": "^0.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0"
