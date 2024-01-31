@@ -33,7 +33,6 @@ function SidePanelView() {
     <SidePanel>
       <SidePanel.Header
         title="Side Panel"
-        subtitle="Subtitle"
         titleLink="https://developer.helpscout.com/"
         icon="large-single-arrow-left"
       />
