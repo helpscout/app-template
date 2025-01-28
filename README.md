@@ -18,8 +18,11 @@ This is a basic starter template for building a Help Scout Sidebar App. It uses 
 - Callback URL: the URL of your environment you copied previously
 - Secret Key: any text value
 - Mailboxes: select the mailboxes where you want this app to be available in
-8. Go to one of the Mailboxes you selected in the previous step and open a conversation. You should see your app running in the right Sidebar.
+8. Go to one of the Mailboxes you selected in the previous step and open a conversation. You'll see an app container with your app's title and string of query parameters, which is Codesandbox's (very confusing) initial preview confirmation. Focus the container and either use `Tab` navigation or search for the text Preview to get access to [this button](https://github.com/user-attachments/assets/16d07470-37d3-42d0-b85d-0a21d6c000c6), then hit `Enter`. You should now see your app rendered.
 9. Now you can start making changes to your app in CodeSandbox and you should see those changes reflected immediately in Help Scout.
+
+
+
 
 ## 🛠️ Resources
 
