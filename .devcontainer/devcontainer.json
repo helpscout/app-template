@@ -1,0 +1,14 @@
+{
+  "name": "Help Scout App Template",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+  "updateContentCommand": "npm install",
+  "postAttachCommand": "npm run dev",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "App Preview",
+      "onAutoForward": "notify",
+      "visibility": "public"
+    }
+  }
+}
